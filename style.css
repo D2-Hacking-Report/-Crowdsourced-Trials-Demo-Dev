@@ -1,4 +1,4 @@
---- START OF FILE Crowdsourced-Trials-Demo-main/style.css ---
+
 
 /* General Body & Theme */
 body {
@@ -55,7 +55,7 @@ input[type="text"] {
     margin-bottom: 15px;
 }
 
-/* Page-specific elements */
+/* Page-specific elements & Containers */
 #player-card, #results, .leaderboard-container, #history-container {
     margin-top: 30px;
     padding: 20px;
@@ -85,22 +85,24 @@ input[type="text"] {
     font-size: 1.1em;
 }
 
-/* Leaderboard Styles */
+/* Leaderboard & History List Styles */
 .leaderboard-container {
     margin-top: 40px;
 }
 
-#top-cheaters-list {
+#top-cheaters-list, .history-list {
     padding-left: 20px;
     list-style-type: decimal;
 }
 
+/* Style for individual list items on both pages */
 #top-cheaters-list li, .history-item {
     margin-bottom: 12px;
     padding-bottom: 12px;
     border-bottom: 1px solid #3a3a3e;
 }
 
+/* Remove border from the last item in any list */
 #top-cheaters-list li:last-child, .history-item:last-child {
     border-bottom: none;
     margin-bottom: 0;
@@ -121,9 +123,9 @@ input[type="text"] {
     margin-top: 4px;
 }
 
-/* History Page Styles */
+/* History Page Specific Styles (designed to match the original theme) */
 .history-list {
-    list-style-type: none;
+    list-style-type: none; /* History doesn't need numbers like the leaderboard */
     padding-left: 0;
 }
 
@@ -138,5 +140,3 @@ input[type="text"] {
     margin-top: 4px;
     font-weight: bold;
 }
-
---- END OF FILE Crowdsourced-Trials-Demo-main/style.css ---
